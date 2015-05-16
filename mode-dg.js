@@ -12,7 +12,7 @@ var dgHighlightRules = function() {
      , 'constant.language.dg': 'Ellipsis|NotImplemented|None|True|False'
      , 'variable.language.dg': 'self'
      , 'support.type.exception.dg': 'Exception|KeyboardInterrupt|SystemExit|StopIteration|GeneratorExit|[A-Z]\\w*(?:Error|Exception|Warning)'
-     , 'keyword.control.flow.dg': 'except|finally|for|if|import|not|otherwise|raise|subclass|while|with|yield|yield'
+     , 'keyword.control.flow.dg': 'async|await|except|finally|for|if|import|not|otherwise|raise|return|subclass|while|with|yield'
      , 'keyword.operator.logical.dg': 'and|in|is|or|where'
      , 'variable.other.dg': '[A-Z_]+\'*'
      , 'support.type.dg': '[A-Z]\\w*\'*'
@@ -79,7 +79,7 @@ var dgHighlightRules = function() {
               'punctuation.definition.entity.dg',
               'punctuation.definition.entity.dg' ],
            regex: '(?:`)\\w+\'*(?:`)' },
-         { token: 'keyword.control.flow.dg.yielfrom',
+         { token: 'keyword.control.flow.dg.yieldfrom',
            regex: '\\byield\\s*from\\b' },
          { token: 'variable.other.readwrite.instance.dg',
            regex: '@@?\\s*\\w+\'*' },
